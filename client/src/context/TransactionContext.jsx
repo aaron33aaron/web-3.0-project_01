@@ -29,7 +29,7 @@ const getEthereumContract = () => {
 export const TransactionProvider = ({ children }) => {
     const [currentAccount, setCurrentAccount] = useState('')
     // creating formData states and setting to empty strings
-    const [formData, setformData] = useState({ addressTo: "", amount: "", keyword: "", message: "" });
+    const [formData, setformData] = useState({ addressTo: '', amount: '', keyword: '', message: '' });
 
     // handleChange function that takes e parameter keypress event and name
     const handleChange = (e, name) => {
@@ -88,7 +88,7 @@ export const TransactionProvider = ({ children }) => {
             if(!ethereum) return alert("Please install metamask");
 
              // destrcuture the formData properties
-            const { addressTo, amount, keyword, message } = formData.value;
+            const { addressTo, amount, keyword, message } = formData;
 
             getEthereumContract();
 

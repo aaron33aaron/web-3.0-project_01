@@ -28,7 +28,7 @@ const Welcome = () => {
 
     const handleSubmit = (e) => {
         // destrcuture the formData properties
-        const { addressTo, amount, keyword, message } = formData.value;
+        const { addressTo, amount, keyword, message } = formData;
 
         // preventing default form submit page reload from happening
         e.preventDefault();
